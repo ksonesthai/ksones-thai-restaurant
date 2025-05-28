@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ksones Thai Dining and Lounge - Trivia & Rewards</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: Arial, sans-serif; background: white; color: black; }
+        .header { background: white; padding: 2rem; text-align: center; border-bottom: 3px solid #9333ea; }
+        .logo { max-width: 200px; height: auto; margin-bottom: 1rem; }
+        .title { font-size: 2.5rem; font-weight: bold; color: black; margin-bottom: 0.5rem; }
+        .subtitle { color: #9333ea; font-size: 1.2rem; margin-bottom: 0.5rem; }
+        .address { color: #666; }
+        .download-section { background: linear-gradient(135deg, #9333ea, #7c3aed); padding: 2rem; text-align: center; color: white; }
+        .download-title { font-size: 1.8rem; font-weight: bold; margin-bottom: 1rem; }
+        .download-text { margin-bottom: 1.5rem; opacity: 0.9; }
+        .menu-grid { max-width: 1200px; margin: 0 auto; padding: 3rem 1rem; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; }
+        .menu-card { background: white; border: 2px solid #e5e7eb; border-radius: 12px; padding: 2rem; text-align: center; transition: all 0.3s; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+        .menu-card:hover { border-color: #9333ea; transform: translateY(-5px); box-shadow: 0 10px 20px rgba(147,51,234,0.2); }
+        .card-icon { width: 60px; height: 60px; background: linear-gradient(135deg, #9333ea, #7c3aed); border-radius: 50%; margin: 0 auto 1rem; display: flex; align-items: center; justify-content: center; color: white; font-size: 1.5rem; }
+        .card-title { font-size: 1.2rem; font-weight: bold; margin-bottom: 0.5rem; color: black; }
+        .card-desc { color: #666; font-size: 0.9rem; margin-bottom: 1.5rem; }
+        .card-btn { background: linear-gradient(135deg, #9333ea, #7c3aed); color: white; border: none; padding: 0.75rem 1.5rem; border-radius: 8px; font-weight: 600; cursor: pointer; transition: opacity 0.3s; text-decoration: none; display: inline-block; }
+        .card-btn:hover { opacity: 0.9; }
+        .trivia-section { background: #f8fafc; padding: 2rem; text-align: center; border-top: 1px solid #e5e7eb; }
+        .trivia-buttons { display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem; margin-top: 1rem; }
+        .trivia-btn { background: #9333ea; color: white; border: none; padding: 0.75rem 1.5rem; border-radius: 8px; font-weight: 600; cursor: pointer; transition: background 0.3s; }
+        .trivia-btn:hover { background: #7c3aed; }
+        .hours { background: #f3f4f6; padding: 2rem; text-align: center; }
+        .hours-title { font-size: 1.5rem; font-weight: bold; margin-bottom: 1rem; color: black; }
+        .hours-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem; max-width: 800px; margin: 0 auto; }
+        .hours-day { background: white; padding: 1rem; border-radius: 8px; border-left: 4px solid #9333ea; }
+        .day-name { font-weight: bold; color: #9333ea; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1 class="title">Ksones Thai Dining and Lounge</h1>
+        <p class="subtitle">Authentic Thai Cuisine in Nashua, NH</p>
+        <p class="address">493 Amherst St Ste 6, Nashua, NH 03063 • (603) 459-8621</p>
+    </div>
+
+    <div class="download-section">
+        <h2 class="download-title">📱 Download Our Mobile App!</h2>
+        <p class="download-text">Get the full Ksones Thai experience on your phone. Play trivia, earn points, and redeem prizes anytime, anywhere!</p>
+        <p style="font-size: 0.9rem; opacity: 0.8;">Visit this page on your mobile device for app installation instructions</p>
+    </div>
+
+    <div class="trivia-section">
+        <h2 style="margin-bottom: 1rem; color: black;">🏆 Play Trivia & Win Prizes!</h2>
+        <p style="color: #666; margin-bottom: 1rem;">Test your knowledge, earn points and redeem for prizes</p>
+        <div class="trivia-buttons">
+            <button class="trivia-btn" onclick="alert('Download our mobile app for the full trivia experience!')">Register for Trivia</button>
+            <button class="trivia-btn" onclick="alert('Download our mobile app to sign in and play!')">Sign In to Play</button>
+        </div>
+    </div>
+
+    <div class="menu-grid">
+        <div class="menu-card">
+            <div class="card-icon">🍜</div>
+            <h3 class="card-title">Order Online For Takeout</h3>
+            <p class="card-desc">Quick & convenient takeout ordering</p>
+            <a href="https://ksonesthai.getbento.com/online-ordering/Nashua/menu" target="_blank" class="card-btn">Order Now</a>
+        </div>
+
+        <div class="menu-card">
+            <div class="card-icon">🚚</div>
+            <h3 class="card-title">Order Online For Delivery</h3>
+            <p class="card-desc">Get Ksones delivered to your door</p>
+            <a href="https://www.grubhub.com/restaurant/ksones-thai-dining--lounge-493-amherst-st-nashua/9143952" target="_blank" class="card-btn">Order Delivery</a>
+        </div>
+
+        <div class="menu-card">
+            <div class="card-icon">📅</div>
+            <h3 class="card-title">Reserve a Table</h3>
+            <p class="card-desc">Book your dining experience</p>
+            <a href="https://ksonesthai.com/nashua-nh/reservations/" target="_blank" class="card-btn">Make Reservation</a>
+        </div>
+
+        <div class="menu-card">
+            <div class="card-icon">🎉</div>
+            <h3 class="card-title">Request Catering For Event</h3>
+            <p class="card-desc">Perfect for special occasions</p>
+            <a href="https://ksonesthai.com/nashua-nh/catering/" target="_blank" class="card-btn">Request Catering</a>
+        </div>
+
+        <div class="menu-card">
+            <div class="card-icon">🎁</div>
+            <h3 class="card-title">Order Gift Cards</h3>
+            <p class="card-desc">Share the taste of Thailand</p>
+            <a href="https://ksonesthai.com/nashua-nh/gift-cards/" target="_blank" class="card-btn">Buy Gift Cards</a>
+        </div>
+
+        <div class="menu-card">
+            <div class="card-icon">🏆</div>
+            <h3 class="card-title">Play Trivia & Win Prizes</h3>
+            <p class="card-desc">Download our mobile app for the full experience</p>
+            <button class="card-btn" onclick="alert('Visit this page on your mobile device to download our app!')">Get Mobile App</button>
+        </div>
+    </div>
+
+    <div class="hours">
+        <h2 class="hours-title">Restaurant Hours</h2>
+        <div class="hours-grid">
+            <div class="hours-day">
+                <div class="day-name">Monday - Friday</div>
+                <div>Lunch: 11:00am - 2:30pm</div>
+                <div>Dinner: 4:00pm - 9:00pm</div>
+                <div>Bar: Open all day</div>
+            </div>
+            <div class="hours-day">
+                <div class="day-name">Saturday</div>
+                <div>Dinner: 12:00pm - 9:30pm</div>
+            </div>
+            <div class="hours-day">
+                <div class="day-name">Sunday</div>
+                <div>Dinner: 2:00pm - 8:00pm</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
